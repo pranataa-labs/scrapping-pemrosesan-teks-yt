@@ -1,4 +1,4 @@
-# Praktikum Pemrosesan Teks
+# Pemrosesan Teks
 **Universitas Teknologi Yogyakarta (UTY)**  
 *Fakultas Sains & Teknologi • Program Studi Informatika*  
 *Semester Ganjil 2026/2027*
