@@ -1,22 +1,7 @@
-# Praktikum Pemrosesan Teks (Pertemuan 1–4)
+# Praktikum Pemrosesan Teks
 **Universitas Teknologi Yogyakarta (UTY)**  
 *Fakultas Sains & Teknologi • Program Studi Informatika*  
 *Semester Ganjil 2026/2027*
-
----
-
-### Identitas Tugas
-* **Mata Kuliah:** Praktikum Pemrosesan Teks
-* **Dosen Pengampu:** Muhammad Henri Syuhada, S.T., M.T.
-* **Kelompok:** 1 (Satu)
-* **Anggota Kelompok (5 Orang):**
-  1. Muhammad Aria Sastra (NIM: 5230411005)
-  2. Maheswara Rajendra Schindler (NIM: 5230411017)
-  3. Muhammad Putra Pratama Budiman (NIM: 5230411026)
-  4. Taufik Nur Ardiansyah (NIM: 5230411040)
-  5. Calvin Darmawan Harun (NIM: 5230411006)
-
----
 
 ### Topik Kasus Nyata
 * **Judul:** Analisis Opini Publik terhadap Korupsi Anggaran dan Manipulasi Laporan Berdasarkan Komentar Video YouTube
