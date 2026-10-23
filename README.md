@@ -1,32 +1,44 @@
-# Pemrosesan Teks
+# 📊 Text Processing & NLP Practicum: YouTube Comment Mining
+
 **Universitas Teknologi Yogyakarta (UTY)**  
-*Fakultas Sains & Teknologi • Program Studi Informatika*  
-*Semester Ganjil 2026/2027*
-
-### Topik Kasus Nyata
-* **Judul:** Analisis Opini Publik terhadap Korupsi Anggaran dan Manipulasi Laporan Berdasarkan Komentar Video YouTube
-* **Sumber Data:** https://www.youtube.com/watch?v=ToZSRkAybKc
-* **Jumlah Korpus:** 520 Data Komentar Bahasa Indonesia
+*Faculty of Science & Technology • Department of Informatics*  
 
 ---
 
-### Struktur Berkas
-* [`Tugas_Kelompok_Pemrosesan_Teks.ipynb`](./Tugas_Kelompok_Pemrosesan_Teks.ipynb) : Notebook Google Colab / Jupyter lengkap yang mencakup 5 tahap text mining, ekstraksi regex, pemeliharaan negasi, stemming Sastrawi, 15 bigram teratas, dan 10 kolokasi PMI.
-* [`korpus_komentar_clean.csv`](./korpus_komentar_clean.csv) : Berkas CSV korpus hasil ekstraksi dan praproses (520 ulasan bersih, teranonimkan dengan hash SHA-256).
+## 📌 Project Overview & Research Context
+
+* **Topic:** Public Opinion Mining on Budget Misappropriation and Audit Manipulation via YouTube Comments
+* **Data Source:** YouTube Public Commentary (`https://www.youtube.com/watch?v=ToZSRkAybKc`)
+* **Corpus Volume:** 520 Curated Indonesian Text Comments
+* **Academic Course:** Applied Text Processing Practicum
 
 ---
 
-### Ringkasan Metodologi
-1. **Pengumpulan Data:** Scraping 520 ulasan komentar YouTube menggunakan `youtube-comment-downloader`.
-2. **Anonimisasi Data:** Penyamaran identitas akun menggunakan enkripsi satu arah SHA-256 (`user_xxxxxxxx`).
-3. **Ekstraksi Fitur Regex:** Deteksi URL, mention (@), hashtag (#), emoji, dan angka.
-4. **Praproses Teks Multi-Tahap:**
-   * Case folding
-   * Regex cleaning
-   * Tokenisasi NLTK
-   * Normalisasi slang (Leksikon 15.000 kata)
-   * Stopword removal dengan **kata negasi dipertahankan** (*tidak, bukan, belum, kurang, jangan, tanpa, palsu*).
-5. **Stemming & N-Gram:**
-   * Stemming bahasa Indonesia dengan Sastrawi.
-   * Ekstraksi 15 Bigram teratas (FreqDist).
-   * Ekstraksi 10 Kolokasi PMI teratas (Pointwise Mutual Information dengan filter frekuensi $\ge 3$).
+## 📁 Repository Organization
+
+* [`Tugas_Kelompok_Pemrosesan_Teks.ipynb`](./Tugas_Kelompok_Pemrosesan_Teks.ipynb): Master Jupyter/Colab notebook executing the 5-stage text mining pipeline, regex extraction, negation preservation, Sastrawi morphological stemming, Top-15 Bigrams, and Top-10 PMI collocations.
+* [`korpus_komentar_clean.csv`](./korpus_komentar_clean.csv): Anonymized and cleaned text corpus dataset (520 verified comments with SHA-256 author hashing).
+
+---
+
+## 🔬 NLP Methodology & Processing Pipeline
+
+1. **Automated Data Scraping:** Ingestion of 520 raw YouTube comments using `youtube-comment-downloader`.
+2. **Privacy Anonymization:** One-way irreversible SHA-256 account masking (`user_xxxxxxxx`).
+3. **Regex Pattern Extraction:** Explicit capture and auditing of URLs, user mentions (`@`), hashtags (`#`), unicode emojis, and numeric quantities.
+4. **Multi-Stage Text Preprocessing:**
+   * Case folding to lowercase.
+   * Regex character cleaning and punctuation stripping.
+   * NLTK tokenization.
+   * Slang word normalization against a 15,000-word vernacular dictionary.
+   * Stopword removal with **critical negation preservation** (*tidak, bukan, belum, kurang, jangan, tanpa, palsu*) to protect sentiment polarity.
+5. **Stemming & N-Gram Collocation:**
+   * Indonesian morphological stemming utilizing the Sastrawi library.
+   * Frequency distribution extraction of Top-15 Bigrams (`FreqDist`).
+   * Top-10 Pointwise Mutual Information (PMI) collocation extraction with frequency threshold ($\ge 3$).
+
+---
+
+<p align="center">
+  Maintained by <b><a href="https://github.com/pranataa-labs">pranataa-labs</a></b>
+</p>
